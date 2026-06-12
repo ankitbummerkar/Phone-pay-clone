@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 export default function Login() {
@@ -207,6 +207,23 @@ export default function Login() {
                 >
                   Login
                 </button>
+
+                {/* Login Link */}
+
+                <p className="text-center text-gray-600 mt-3">
+                  New here?{" "}
+                  <Link
+                    to="/"
+                    className="
+                  ml-2
+                  text-blue-600
+                  font-semibold
+                  hover:underline
+                  "
+                  >
+                    Signup
+                  </Link>
+                </p>
               </div>
             </form>
           </div>
