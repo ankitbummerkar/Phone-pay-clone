@@ -11,9 +11,12 @@ export default function Dashboard() {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/auth/me", {
-          withCredentials: true,
-        });
+        const res = await axios.get(
+          "https://phonepaybackend-yapz.onrender.com/auth/me",
+          {
+            withCredentials: true,
+          },
+        );
 
         setUser(res.data.user);
       } catch (error) {
