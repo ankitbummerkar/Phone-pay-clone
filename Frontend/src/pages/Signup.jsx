@@ -15,7 +15,7 @@ export default function Signup() {
 
     try {
       const response = await axios.post(
-        "https://phonepaybackend-yapz.onrender.com/signup",
+        "https://phonepaybackend-yapz.onrender.com/auth/signup",
         {
           name,
           email,
