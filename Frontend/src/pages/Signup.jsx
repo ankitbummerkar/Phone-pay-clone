@@ -34,9 +34,7 @@ export default function Signup() {
       setEmail("");
       setPassword("");
 
-      setTimeout(() => {
-        navigate("/login");
-      }, 1000);
+      navigate("/login");
     } catch (error) {
       console.log(error.response.data);
 
