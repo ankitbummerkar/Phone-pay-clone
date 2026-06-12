@@ -40,9 +40,7 @@ export default function Dashboard() {
 
       toast.success(res.data.message);
 
-      setTimeout(() => {
-        navigate("/login");
-      }, 1000);
+      navigate("/login");
     } catch (error) {
       toast.error(error.response?.data?.message || "Logout failed");
     }
