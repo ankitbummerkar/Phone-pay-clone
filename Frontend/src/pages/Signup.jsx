@@ -15,7 +15,7 @@ export default function Signup() {
 
     try {
       const response = await axios.post(
-        "https://phone-pay-clone-ot8p56dtd-ankit888is-projects.vercel.app/signup",
+        "https://phonepaybackend-yapz.onrender.com/signup",
         {
           name,
           email,

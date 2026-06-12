@@ -18,7 +18,7 @@ export default function AddMoney() {
       setLoading(true);
 
       await axios.post(
-        "https://phone-pay-clone-ot8p56dtd-ankit888is-projects.vercel.app/payment/add-money",
+        "https://phonepaybackend-yapz.onrender.com/payment/add-money",
         {
           amount,
         },

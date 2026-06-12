@@ -28,7 +28,7 @@ export default function Dashboard() {
   const logout = async () => {
     try {
       const res = await axios.post(
-        "https://phone-pay-clone-ot8p56dtd-ankit888is-projects.vercel.app/auth/logout",
+        "https://phonepaybackend-yapz.onrender.com/auth/logout",
         {},
         {
           withCredentials: true,
