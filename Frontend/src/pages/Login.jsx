@@ -14,7 +14,7 @@ export default function Login() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/auth/login",
+        "https://phone-pay-clone-ot8p56dtd-ankit888is-projects.vercel.app/auth/login",
         {
           email,
           password,

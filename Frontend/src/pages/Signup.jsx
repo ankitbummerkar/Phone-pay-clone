@@ -15,7 +15,7 @@ export default function Signup() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/auth/signup",
+        "https://phone-pay-clone-ot8p56dtd-ankit888is-projects.vercel.app/signup",
         {
           name,
           email,
@@ -38,7 +38,7 @@ export default function Signup() {
         navigate("/login");
       }, 1000);
     } catch (error) {
-      console.log(error);
+      console.log(error.response.data);
 
       toast.error(error.response?.data?.message || "Signup Failed");
     }
